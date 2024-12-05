@@ -15,6 +15,18 @@ export function getLinesFromFile(filePath: string): string[] {
     }
 }
 
+export function getLinesFromFileMultipleParts(filePath: string, delimiter:RegExp = /\n\s*\n/): string[][] {
+    try {
+        const fileContent: string = fs.readFileSync(filePath, 'utf-8');
+        const [firstPart, secondPart] = fileContent.trim().split(delimiter);
+
+        return [getLines(firstPart), getLines(secondPart)];
+    } catch (err) {
+        console.error(err);
+        return [];
+    }
+}
+
 export interface AOCSolver {
     solve(): number;
 }
