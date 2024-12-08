@@ -5,6 +5,7 @@ import { Day04FirstTaskSolver, Day04SecondTaskSolver } from "./day04/day04";
 import { Day05FirstTaskSolver, Day05SecondTaskSolver } from "./day05/day05";
 import { Day06FirstTaskSolver, Day06SecondTaskSolver } from "./day06/day06";
 import { Day07FirstTaskSolver, Day07SecondTaskSolver } from "./day07/day07";
+import { Day08FirstTaskSolver, Day08SecondTaskSolver } from "./day08/day08";
 
 
 
@@ -54,7 +55,14 @@ import { Day07FirstTaskSolver, Day07SecondTaskSolver } from "./day07/day07";
 // console.log(day06SecondTaskSolver.solve());
 
 // Day 07
-const day07FirstTaskSolver = new Day07FirstTaskSolver('src/day07/day07.txt');
-console.log(day07FirstTaskSolver.solve());
-const day07SecondTaskSolver = new Day07SecondTaskSolver('src/day07/day07.txt');
-console.log(day07SecondTaskSolver.solve());
+// const day07FirstTaskSolver = new Day07FirstTaskSolver('src/day07/day07.txt');
+// console.log(day07FirstTaskSolver.solve());
+// const day07SecondTaskSolver = new Day07SecondTaskSolver('src/day07/day07.txt');
+// console.log(day07SecondTaskSolver.solve());
+
+
+const day08FirstTaskSolver = new Day08FirstTaskSolver('src/day08/day08.txt');
+console.log(day08FirstTaskSolver.solve());
+
+const day08SecondTaskSolver = new Day08SecondTaskSolver('src/day08/day08.txt');
+console.log(day08SecondTaskSolver.solve());
