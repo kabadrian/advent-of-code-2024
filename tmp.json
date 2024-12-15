@@ -1,0 +1,1173 @@
+{
+    "type": "container",
+    "props": {
+      "className": "text-2xs",
+      "children": [
+        {
+          "type": "container",
+          "props": {
+            "children": [
+              {
+                "type": "container",
+                "props": {
+                  "className": "flex flex-row mb-4 items-end",
+                  "children": [
+                    {
+                      "type": "input",
+                      "props": {
+                        "field": "_name",
+                        "className": "inline text-xl font-bold uppercase"
+                      }
+                    },
+                    {
+                      "type": "numericalSerie",
+                      "props": {
+                        "field": "_id",
+                        "className": "ml-2 inline text-lg font-medium w-40"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "type": "select",
+                "props": {
+                  "field": "stav",
+                  "className": "mb-6 w-fit"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "container",
+          "props": {
+            "className": "flex flex-row pb-4",
+            "children": [
+              {
+                "type": "container",
+                "props": {
+                  "children": [
+                    {
+                      "type": "container",
+                      "props": {
+                        "className": "flex mb-4",
+                        "children": [
+                          {
+                            "type": "container",
+                            "props": {
+                              "className": "flex-1",
+                              "visible": "logoFirmy.viditelne",
+                              "children": [
+                                {
+                                  "type": "image",
+                                  "props": {
+                                    "visible": "logoFirmy.viditelne",
+                                    "url": "logoFirmy.url"
+                                  }
+                                }
+                              ]
+                            }
+                          },
+                          {
+                            "type": "fieldset",
+                            "props": {
+                              "className": "flex-1 p-4",
+                              "label": "odberatel",
+                              "labelClassName": "font-medium uppercase text-gray-500",
+                              "children": [
+                                {
+                                  "type": "container",
+                                  "props": {
+                                    "className": "flex flex-col gap-2",
+                                    "children": [
+                                      {
+                                        "type": "text",
+                                        "props": {
+                                          "className": "font-bold",
+                                          "field": "odberatel.nazovDodavatela"
+                                        }
+                                      },
+                                      {
+                                        "type": "text",
+                                        "props": {
+                                          "className": "",
+                                          "field": "odberatel.adresa.ulica"
+                                        }
+                                      },
+                                      {
+                                        "type": "container",
+                                        "props": {
+                                          "className": "flex gap-2",
+                                          "children": [
+                                            {
+                                              "type": "text",
+                                              "props": {
+                                                "className": "",
+                                                "field": "odberatel.adresa.psc"
+                                              }
+                                            },
+                                            {
+                                              "type": "text",
+                                              "props": {
+                                                "className": "",
+                                                "field": "odberatel.adresa.mesto"
+                                              }
+                                            }
+                                          ]
+                                        }
+                                      },
+                                      {
+                                        "type": "text",
+                                        "props": {
+                                          "className": "",
+                                          "field": "odberatel.adresa.krajina"
+                                        }
+                                      }
+                                    ]
+                                  }
+                                }
+                              ]
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "type": "container",
+                      "props": {
+                        "className": "",
+                        "children": [
+                          {
+                            "type": "label",
+                            "props": {
+                              "label": "odberatel.ico",
+                              "labelClassName": "min-w-[5rem]",
+                              "className": "flex",
+                              "child": {
+                                "type": "text",
+                                "props": {
+                                  "field": "odberatel.ico",
+                                  "labelClass": "pr-4 flex-1"
+                                }
+                              }
+                            }
+                          },
+                          {
+                            "type": "label",
+                            "props": {
+                              "label": "odberatel.dic",
+                              "labelClassName": "min-w-[5rem]",
+                              "className": "flex",
+                              "child": {
+                                "type": "text",
+                                "props": {
+                                  "field": "odberatel.dic",
+                                  "className": "items-center"
+                                }
+                              }
+                            }
+                          },
+                          {
+                            "type": "label",
+                            "props": {
+                              "label": "odberatel.icdph",
+                              "labelClassName": "min-w-[5rem]",
+                              "className": "flex",
+                              "child": {
+                                "type": "text",
+                                "props": {
+                                  "field": "odberatel.icdph",
+                                  "className": "items-center mb-4"
+                                }
+                              }
+                            }
+                          },
+                          {
+                            "type": "label",
+                            "props": {
+                              "label": "odberatel.telCislo",
+                              "labelClassName": "min-w-[5rem]",
+                              "className": "flex",
+                              "child": {
+                                "type": "text",
+                                "props": {
+                                  "field": "odberatel.telCislo",
+                                  "className": "items-center"
+                                }
+                              }
+                            }
+                          },
+                          {
+                            "type": "label",
+                            "props": {
+                              "label": "odberatel.email",
+                              "labelClassName": "min-w-[5rem]",
+                              "className": "flex",
+                              "child": {
+                                "type": "text",
+                                "props": {
+                                  "field": "odberatel.email",
+                                  "className": "items-center"
+                                }
+                              }
+                            }
+                          },
+                          {
+                            "type": "label",
+                            "props": {
+                              "label": "odberatel.web",
+                              "labelClassName": "min-w-[5rem]",
+                              "className": "flex",
+                              "child": {
+                                "type": "text",
+                                "props": {
+                                  "field": "odberatel.web",
+                                  "className": "items-center"
+                                }
+                              }
+                            }
+                          },
+                          {
+                            "type": "label",
+                            "props": {
+                              "label": "vystavil",
+                              "labelClassName": "min-w-[5rem]",
+                              "className": "flex",
+                              "child": {
+                                "type": "text",
+                                "props": {
+                                  "field": "vystavil",
+                                  "className": "items-center"
+                                }
+                              }
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "className": "flex-1"
+                }
+              },
+              {
+                "type": "container",
+                "props": {
+                  "children": [
+                    {
+                      "type": "fieldset",
+                      "props": {
+                        "className": "rounded-md border border-gray-500 py-4 px-8 mb-4",
+                        "label": "dodavatel",
+                        "labelClassName": "font-medium ml-[-1.5rem] px-2 uppercase text-gray-500",
+                        "children": [
+                          {
+                            "type": "container",
+                            "props": {
+                              "className": "flex flex-col gap-2",
+                              "children": [
+                                {
+                                  "type": "input",
+                                  "props": {
+                                    "field": "dodavatel.nazov"
+                                  }
+                                },
+                                {
+                                  "type": "text",
+                                  "props": {
+                                    "className": "",
+                                    "field": "dodavatel.fakturacnaAdresa.ulica"
+                                  }
+                                },
+                                {
+                                  "type": "container",
+                                  "props": {
+                                    "className": "flex gap-2",
+                                    "children": [
+                                      {
+                                        "type": "text",
+                                        "props": {
+                                          "className": "",
+                                          "field": "dodavatel.fakturacnaAdresa.psc"
+                                        }
+                                      },
+                                      {
+                                        "type": "text",
+                                        "props": {
+                                          "className": "",
+                                          "field": "dodavatel.fakturacnaAdresa.mesto"
+                                        }
+                                      }
+                                    ]
+                                  }
+                                }
+                              ]
+                            }
+                          },
+                          {
+                            "type": "text",
+                            "props": {
+                              "className": "",
+                              "field": "dodavatel.fakturacnaAdresa.krajina"
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "type": "container",
+                      "props": {
+                        "children": [
+                          {
+                            "type": "container",
+                            "props": {
+                              "className": "mb-3",
+                              "children": [
+                                {
+                                  "type": "label",
+                                  "props": {
+                                    "label": "postuPosielatNaInuAdresu",
+                                    "labelClassName": "order-2",
+                                    "className": "flex gap-2",
+                                    "child": {
+                                      "type": "checkbox",
+                                      "props": {
+                                        "field": "postuPosielatNaInuAdresu"
+                                      }
+                                    },
+                                    "hideMode": {
+                                      "print": true,
+                                      "view": true
+                                    }
+                                  }
+                                },
+                                {
+                                  "type": "container",
+                                  "props": {
+                                    "className": "text-xs",
+                                    "visibleOnlyIf": {
+                                      "field": "postuPosielatNaInuAdresu",
+                                      "value": true
+                                    },
+                                    "children": [
+                                      {
+                                        "type": "label",
+                                        "props": {
+                                          "label": "dodavatel.postovaAdresa.nazovFirmy",
+                                          "labelClassName": "min-w-[5rem]",
+                                          "className": "flex gap-2",
+                                          "child": {
+                                            "type": "container",
+                                            "props": {
+                                              "children": [
+                                                {
+                                                  "type": "text",
+                                                  "props": {
+                                                    "field": "dodavatel.postovaAdresa.nazovFirmy"
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        }
+                                      },
+                                      {
+                                        "type": "label",
+                                        "props": {
+                                          "label": "dodavatel.postovaAdresa.menoPrijemcu",
+                                          "labelClassName": "min-w-[5rem]",
+                                          "className": "flex gap-2",
+                                          "child": {
+                                            "type": "container",
+                                            "props": {
+                                              "children": [
+                                                {
+                                                  "type": "text",
+                                                  "props": {
+                                                    "field": "dodavatel.postovaAdresa.menoPrijemcu"
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        }
+                                      },
+                                      {
+                                        "type": "label",
+                                        "props": {
+                                          "label": "dodavatel.postovaAdresa",
+                                          "labelClassName": "min-w-[5rem]",
+                                          "className": "flex gap-2",
+                                          "child": {
+                                            "type": "container",
+                                            "props": {
+                                              "children": [
+                                                {
+                                                  "type": "text",
+                                                  "props": {
+                                                    "field": "dodavatel.postovaAdresa.ulica"
+                                                  }
+                                                },
+                                                {
+                                                  "type": "text",
+                                                  "props": {
+                                                    "field": "dodavatel.postovaAdresa.psc"
+                                                  }
+                                                },
+                                                {
+                                                  "type": "text",
+                                                  "props": {
+                                                    "field": "dodavatel.postovaAdresa.mesto"
+                                                  }
+                                                },
+                                                {
+                                                  "type": "text",
+                                                  "props": {
+                                                    "field": "dodavatel.postovaAdresa.krajina"
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        }
+                                      }
+                                    ]
+                                  }
+                                }
+                              ]
+                            }
+                          },
+                          {
+                            "type": "label",
+                            "props": {
+                              "label": "dodavatel.ico",
+                              "labelClassName": "min-w-[5rem]",
+                              "className": "flex gap-2",
+                              "child": {
+                                "type": "text",
+                                "props": {
+                                  "field": "dodavatel.ico"
+                                }
+                              }
+                            }
+                          },
+                          {
+                            "type": "label",
+                            "props": {
+                              "label": "dodavatel.dic",
+                              "labelClassName": "min-w-[5rem]",
+                              "className": "flex gap-2",
+                              "child": {
+                                "type": "text",
+                                "props": {
+                                  "field": "dodavatel.dic"
+                                }
+                              }
+                            }
+                          },
+                          {
+                            "type": "label",
+                            "props": {
+                              "label": "dodavatel.icdph",
+                              "labelClassName": "min-w-[5rem]",
+                              "className": "flex gap-2",
+                              "child": {
+                                "type": "text",
+                                "props": {
+                                  "field": "dodavatel.icdph"
+                                }
+                              }
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "className": "flex-1"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "container",
+          "props": {
+            "className": "flex flex-1 border-t border-gray-500",
+            "children": [
+              {
+                "type": "label",
+                "props": {
+                  "label": "datumVystavenia",
+                  "labelClassName": "min-w-[5rem]",
+                  "className": "p-3 w-[20%]",
+                  "child": {
+                    "type": "datepicker",
+                    "props": {
+                      "field": "datumVystavenia",
+                      "className": "font-bold w-[14ch]"
+                    }
+                  }
+                }
+              },
+              {
+                "type": "label",
+                "props": {
+                  "label": "datumDodania",
+                  "labelClassName": "min-w-[5rem]",
+                  "className": "p-3 w-[20%]",
+                  "child": {
+                    "type": "datepicker",
+                    "props": {
+                      "field": "datumDodania",
+                      "className": "font-bold w-[14ch]"
+                    }
+                  }
+                }
+              },
+              {
+                "type": "label",
+                "props": {
+                  "label": "datumSplatnosti",
+                  "labelClassName": "min-w-[5rem]",
+                  "className": "p-3 w-[20%]",
+                  "child": {
+                    "type": "container",
+                    "props": {
+                      "className": "flex",
+                      "children": [
+                        {
+                          "type": "input",
+                          "props": {
+                            "field": "splatnostFakturyDni",
+                            "className": "font-bold w-[4ch]",
+                            "hideMode": {
+                              "print": true,
+                              "view": true
+                            }
+                          }
+                        },
+                        {
+                          "type": "datepicker",
+                          "props": {
+                            "field": "datumSplatnosti",
+                            "className": "font-bold w-[10ch]"
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "container",
+          "props": {
+            "className": "flex justify-around bg-gray-200 gap-2 border-black border-2 p-2 mb-4",
+            "children": [
+              {
+                "type": "label",
+                "props": {
+                  "label": "platobneUdaje.iban",
+                  "labelClassName": "",
+                  "className": "w-[40%]",
+                  "child": {
+                    "type": "relationPicker",
+                    "props": {
+                      "field": "platobneUdaje",
+                      "className": "flex flex-col font-bold"
+                    }
+                  }
+                }
+              },
+              {
+                "type": "label",
+                "props": {
+                  "label": "platobneUdaje.swift",
+                  "labelClassName": "",
+                  "className": "w-[20%]",
+                  "child": {
+                    "type": "text",
+                    "props": {
+                      "field": "platobneUdaje.swift",
+                      "className": "font-bold p-1"
+                    }
+                  }
+                }
+              },
+              {
+                "type": "label",
+                "props": {
+                  "label": "variabilnySymbol",
+                  "labelClassName": "",
+                  "className": "w-[20%]",
+                  "child": {
+                    "type": "input",
+                    "props": {
+                      "field": "variabilnySymbol",
+                      "className": "font-bold"
+                    }
+                  }
+                }
+              },
+              {
+                "type": "label",
+                "props": {
+                  "label": "suma",
+                  "labelClassName": "",
+                  "className": "w-[20%]",
+                  "child": {
+                    "type": "currency",
+                    "props": {
+                      "field": "suma",
+                      "className": "font-bold w-full"
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "container",
+          "props": {
+            "className": "flex text-2xs gap-4 px-3",
+            "children": [
+              {
+                "type": "label",
+                "props": {
+                  "label": "sposobPlatby",
+                  "labelClassName": "",
+                  "className": "",
+                  "child": {
+                    "type": "select",
+                    "props": {
+                      "className": "flex flex-col font-bold",
+                      "field": "sposobPlatby"
+                    }
+                  }
+                }
+              },
+              {
+                "type": "label",
+                "props": {
+                  "label": "sposobDodania",
+                  "labelClassName": "",
+                  "className": "",
+                  "child": {
+                    "type": "select",
+                    "props": {
+                      "className": "flex flex-col font-bold",
+                      "field": "sposobDodania"
+                    }
+                  }
+                }
+              },
+              {
+                "type": "label",
+                "props": {
+                  "label": "zobrazitSpoluSDph",
+                  "className": "text-right flex justify-end items-end gap-1 ml-auto",
+                  "child": {
+                    "type": "checkbox",
+                    "props": {
+                      "field": "zobrazitSpoluSDph",
+                      "className": "py-0.5"
+                    }
+                  },
+                  "hideMode": {
+                    "print": true,
+                    "view": true
+                  }
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "table",
+          "props": {
+            "field": "polozky",
+            "className": "mt-4",
+            "columns": [
+              {
+                "name": "nazovPolozky",
+                "width": "40%",
+                "children": [
+                  {
+                    "type": "input",
+                    "props": {
+                      "field": "nazovPolozky",
+                      "className": "w-full"
+                    }
+                  },
+                  {
+                    "type": "container",
+                    "props": {
+                      "visibleOnlyIf": {
+                        "field": "polozky.*.defaultLastItem"
+                      },
+                      "children": [
+                        {
+                          "type": "textarea",
+                          "props": {
+                            "field": "popis",
+                            "rows": 2,
+                            "className": "w-full",
+                            "placeholder": "Popis položky"
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "type": "container",
+                    "props": {
+                      "className": "flex",
+                      "visibleOnlyIf": {
+                        "field": "polozky.*.zlava",
+                        "value": true
+                      },
+                      "children": [
+                        {
+                          "type": "input",
+                          "props": {
+                            "field": "popisZlavy"
+                          }
+                        },
+                        {
+                          "type": "percent",
+                          "props": {
+                            "className": "w-full text-right",
+                            "field": "percentualnaZlava"
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              },
+              {
+                "name": "pocet",
+                "width": "8%",
+                "children": [
+                  {
+                    "type": "input",
+                    "props": {
+                      "field": "pocet",
+                      "className": "w-full",
+                      "type": "number"
+                    }
+                  }
+                ]
+              },
+              {
+                "name": "mj",
+                "width": "6%",
+                "children": [
+                  {
+                    "type": "select",
+                    "props": {
+                      "field": "mj",
+                      "unselectedPlaceholder": "-",
+                      "className": "w-full"
+                    }
+                  }
+                ]
+              },
+              {
+                "name": "cenaBezDph",
+                "width": "18%",
+                "className": "justify-between",
+                "children": [
+                  {
+                    "type": "currency",
+                    "props": {
+                      "field": "cenaBezDph",
+                      "className": "w-full text-right"
+                    }
+                  },
+                  {
+                    "type": "container",
+                    "props": {
+                      "visibleOnlyIf": {
+                        "field": "polozky.*.zlava",
+                        "value": true
+                      },
+                      "children": [
+                        {
+                          "type": "currency",
+                          "props": {
+                            "field": "fixnaZlavaJednotkova",
+                            "className": "w-full text-right"
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              },
+              {
+                "name": "dph",
+                "width": "10%",
+                "className": "justify-between",
+                "children": [
+                  {
+                    "type": "percent",
+                    "props": {
+                      "field": "dph",
+                      "className": "w-full text-right"
+                    }
+                  }
+                ]
+              },
+              {
+                "name": "spoluSDph",
+                "width": "18%",
+                "className": "justify-between",
+                "visibleOnlyIf": {
+                  "field": "zobrazitSpoluSDph",
+                  "value": true
+                },
+                "children": [
+                  {
+                    "type": "currency",
+                    "props": {
+                      "field": "spoluSDph",
+                      "className": "w-full text-right"
+                    }
+                  },
+                  {
+                    "type": "container",
+                    "props": {
+                      "visibleOnlyIf": {
+                        "field": "polozky.*.defaultLastItem"
+                      },
+                      "children": [
+                        {
+                          "type": "label",
+                          "props": {
+                            "label": "zlava",
+                            "className": "w-full text-right flex justify-end items-center gap-1 h-full h-full",
+                            "child": {
+                              "type": "checkbox",
+                              "props": {
+                                "field": "zlava",
+                                "className": "py-0.5"
+                              }
+                            },
+                            "hideMode": {
+                              "print": true,
+                              "view": true
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              },
+              {
+                "name": "spoluBezDph",
+                "width": "18%",
+                "className": "justify-between",
+                "visibleOnlyIf": {
+                  "field": "zobrazitSpoluSDph",
+                  "value": false
+                },
+                "children": [
+                  {
+                    "type": "currency",
+                    "props": {
+                      "field": "spoluBezDph",
+                      "className": "w-full text-right"
+                    }
+                  },
+                  {
+                    "type": "label",
+                    "props": {
+                      "label": "zlava",
+                      "className": "w-full text-right flex justify-end items-center gap-1 h-full h-full",
+                      "child": {
+                        "type": "checkbox",
+                        "props": {
+                          "field": "zlava",
+                          "className": "py-0.5"
+                        }
+                      },
+                      "hideMode": {
+                        "print": true,
+                        "view": true
+                      }
+                    }
+                  },
+                  {
+                    "type": "container",
+                    "props": {
+                      "visibleOnlyIf": {
+                        "field": "polozky.*.zlava",
+                        "value": true
+                      },
+                      "children": [
+                        {
+                          "type": "currency",
+                          "props": {
+                            "field": "fixnaZlavaSpolu",
+                            "className": "w-full text-right"
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "container",
+          "props": {
+            "className": "break-inside-avoid h-auto",
+            "children": [
+              {
+                "type": "container",
+                "props": {
+                  "className": "mt-4 flex flex-row",
+                  "children": [
+                    {
+                      "type": "textarea",
+                      "props": {
+                        "className": "w-[48%]",
+                        "field": "zaverecnyText"
+                      }
+                    },
+                    {
+                      "type": "container",
+                      "props": {
+                        "className": "w-[4%]",
+                        "children": []
+                      }
+                    },
+                    {
+                      "type": "container",
+                      "props": {
+                        "className": "inline-block w-[48%] break-inside-avoid",
+                        "children": [
+                          {
+                            "type": "label",
+                            "props": {
+                              "label": "sumar.zakladDane",
+                              "labelClassName": "min-w-[5rem]",
+                              "className": "flex w-full justify-between items-center",
+                              "child": {
+                                "type": "currency",
+                                "props": {
+                                  "field": "sumar.zakladDane",
+                                  "className": "text-right"
+                                }
+                              }
+                            }
+                          },
+                          {
+                            "type": "container",
+                            "props": {
+                              "visibleOnlyIf": {
+                                "field": "zobrazitSpoluSDph",
+                                "value": true
+                              },
+                              "children": [
+                                {
+                                  "type": "label",
+                                  "props": {
+                                    "label": "sumar.dph",
+                                    "labelClassName": "min-w-[5rem]",
+                                    "className": "flex w-full justify-between items-center mb-1",
+                                    "child": {
+                                      "type": "currency",
+                                      "props": {
+                                        "field": "sumar.dph",
+                                        "className": "text-right"
+                                      }
+                                    }
+                                  }
+                                }
+                              ]
+                            }
+                          },
+                          {
+                            "type": "container",
+                            "props": {
+                              "children": [
+                                {
+                                  "type": "label",
+                                  "props": {
+                                    "label": "zlava.zlavaNaDoklad",
+                                    "className": "flex items-center gap-1",
+                                    "child": {
+                                      "type": "checkbox",
+                                      "props": {
+                                        "field": "zlava.zlavaNaDoklad",
+                                        "className": "py-0.5"
+                                      }
+                                    },
+                                    "hideMode": {
+                                      "print": true,
+                                      "view": true
+                                    }
+                                  }
+                                }
+                              ]
+                            }
+                          },
+                          {
+                            "type": "container",
+                            "props": {
+                              "className": "flex justify-between items-center gap-1",
+                              "children": [
+                                {
+                                  "type": "container",
+                                  "props": {
+                                    "visibleOnlyIf": {
+                                      "field": "zlava.zlavaNaDoklad",
+                                      "value": true
+                                    },
+                                    "className": "",
+                                    "children": [
+                                      {
+                                        "type": "label",
+                                        "props": {
+                                          "label": "zlava.zlavaNaDoklad",
+                                          "className": "text-right flex justify-end items-baseline gap-1"
+                                        }
+                                      }
+                                    ]
+                                  }
+                                },
+                                {
+                                  "type": "container",
+                                  "props": {
+                                    "className": "flex",
+                                    "visibleOnlyIf": {
+                                      "field": "zlava.zlavaNaDoklad",
+                                      "value": true
+                                    },
+                                    "children": [
+                                      {
+                                        "type": "percent",
+                                        "props": {
+                                          "field": "zlava.percentualnaZlava",
+                                          "className": "w-[10ch] text-right"
+                                        }
+                                      },
+                                      {
+                                        "type": "currency",
+                                        "props": {
+                                          "field": "zlava.fixnaZlava",
+                                          "className": "w-[10ch] text-right"
+                                        }
+                                      }
+                                    ]
+                                  }
+                                }
+                              ]
+                            }
+                          },
+                          {
+                            "type": "label",
+                            "props": {
+                              "label": "sumar.celkom",
+                              "labelClassName": "min-w-[5rem] font-medium text-lg whitespace-nowrap",
+                              "className": "flex w-full justify-between items-center border-t-2 border-gray-400 pt-1 items-center",
+                              "child": {
+                                "type": "currency",
+                                "props": {
+                                  "field": "sumar.celkom",
+                                  "className": "font-bold text-lg text-right"
+                                }
+                              }
+                            }
+                          },
+                          {
+                            "type": "label",
+                            "props": {
+                              "label": "sumar.odpocetZalohy",
+                              "labelClassName": "min-w-[5rem]",
+                              "className": "flex w-full justify-between pt-1 items-center mb-1",
+                              "child": {
+                                "type": "currency",
+                                "props": {
+                                  "field": "sumar.odpocetZalohy",
+                                  "className": "text-right"
+                                }
+                              }
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "type": "container",
+                "props": {
+                  "className": "flex flex-row-reverse",
+                  "children": [
+                    {
+                      "type": "container",
+                      "props": {
+                        "className": "break-inside-avoid",
+                        "children": [
+                          {
+                            "type": "label",
+                            "props": {
+                              "label": "podpisAPeciatka",
+                              "labelClassName": "block border-t border-black px-6 text-center",
+                              "className": "",
+                              "reverseOrder": true,
+                              "child": {
+                                "type": "container",
+                                "props": {
+                                  "className": "flex justify-center mt-[50px] mb-2",
+                                  "children": [
+                                    {
+                                      "type": "image",
+                                      "props": {
+                                        "className": "w-[128px] h-[75px]",
+                                        "visible": "podpisAPeciatka.viditelne",
+                                        "url": "podpisAPeciatka.url"
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "container",
+          "props": {
+            "className": "flex justify-center mt-4",
+            "children": [
+              {
+                "type": "text",
+                "props": {
+                  "field": "paticka.textVPaticke",
+                  "className": "text-center text-[14px] text-gray-700 font-medium"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
